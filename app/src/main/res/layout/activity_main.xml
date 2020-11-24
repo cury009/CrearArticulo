@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtNuevoArticulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/txtNuevoArticulo"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtNombre"
+        android:layout_width="272dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/edtNombre"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNuevoArticulo"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/edtResumen"
+        android:layout_width="278dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/edtResumen"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/edtNombre"
+        app:layout_constraintStart_toStartOf="@+id/edtNombre"
+        app:layout_constraintTop_toBottomOf="@+id/edtNombre"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/edtTexto"
+        android:layout_width="276dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/edtTexto"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/edtResumen"
+        app:layout_constraintStart_toStartOf="@+id/edtResumen"
+        app:layout_constraintTop_toBottomOf="@+id/edtResumen"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btn_crear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/btnCrear"
+        app:layout_constraintEnd_toEndOf="@+id/edtTexto"
+        app:layout_constraintStart_toStartOf="@+id/edtTexto"
+        app:layout_constraintTop_toBottomOf="@+id/edtTexto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

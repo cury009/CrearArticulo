@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CrearArticulo</string>
+    <string name="txtNuevoArticulo">Nuevo Articulo</string>
+    <string name="edtNombre">Nombre</string>
+    <string name="edtResumen">resumen</string>
+    <string name="edtTexto">texto del Articulo</string>
+    <string name="btnCrear">CREAR</string>
+</resources>
